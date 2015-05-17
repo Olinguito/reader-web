@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="initial-scale=1, width=device-width")
+    //- application main style
+    link(rel="stylesheet",href="style.css")
+  body(aurelia-app="reader/boot")
+    //- include boot
+    //- startup scripts
+    script(type="text/javascript",src="vendor/system.js")
+    script(type="text/javascript",src="config.js")
+    if 'production' === process.env.NODE_ENV
+      script(type="text/javascript",src="build.js")
+    else
+      script(type="text/javascript") var DEV_MODE = true
+    script(type="text/javascript") System.import('aurelia-bootstrapper')

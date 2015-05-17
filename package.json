@@ -1,0 +1,61 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "description": "Application for the BunnyInc Hackathon",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test",
+    "baseURL": "src",
+    "packages": "vendor"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Olinguito/reader-web.git"
+  },
+  "keywords": [
+    "hackathon"
+  ],
+  "author": "Daniel Olano <danielolanoc@gmail.com>",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/Olinguito/reader-web/issues"
+  },
+  "homepage": "https://github.com/Olinguito/reader-web#readme",
+  "devDependencies": {
+    "babel-eslint": "^3.1.4",
+    "browser-sync": "^2.7.1",
+    "del": "^1.1.1",
+    "eslint": "^0.21.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-gh-pages": "^0.5.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.0.1",
+    "jspm": "^0.15.6",
+    "nib": "^1.1.0",
+    "run-sequence": "^1.1.0",
+    "vinyl-paths": "^1.0.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src",
+      "packages": "vendor",
+      "test": "test"
+    },
+    "dependencies": {
+      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.12.0",
+      "aurelia-http-client": "github:aurelia/http-client@^0.8.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
