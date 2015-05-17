@@ -8,10 +8,13 @@ export class App {
         this.router = router;
         config.title = '';
         config.map([
-            {route: '', moduleId: 'reader/home/interests'},
+            {route: 'interests', moduleId: 'reader/home/interests'},
             {route: 'home', moduleId: 'reader/home/home', nav: true},
             {route: 'profile', moduleId: 'reader/profile/profile', nav: true},
-            {route: 'read', moduleId: 'reader/read/read'}
+            {route: 'read/:id', moduleId: 'reader/read/read'},
+            {route: 'read/:id/questions', moduleId: 'reader/read/reading-questions'},
+            {route: 'questions/:id', moduleId: 'reader/read/question-answers'},
+            {route: 'read/:id/suggestions', moduleId: 'reader/read/reading-suggestions'}
         ]);
     }
 }

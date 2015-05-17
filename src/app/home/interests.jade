@@ -1,2 +1,5 @@
 template
   h2 Interests
+  
+  ul
+    li(repeat.for="t of tags"): reading-tag(tag.bind="t")

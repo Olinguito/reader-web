@@ -1,7 +1,7 @@
-import {resource, property} from 'lib/backend/backend';
+import {resource, property} from 'lib/backend/decorators';
 
 @resource
-class Achievement {
+export class Achievement {
     @property name;
     @property description;
     @property expPoints;

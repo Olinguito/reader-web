@@ -1,0 +1,6 @@
+template
+  reading-question(question.bind="question")
+    
+  ul
+    li(repeat.for="a of answers")
+      reading-question-answer(answer.bind="a")

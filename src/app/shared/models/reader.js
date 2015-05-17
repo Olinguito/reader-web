@@ -1,4 +1,4 @@
-import {resource, property} from 'lib/backend/backend';
+import {resource, property} from 'lib/backend/decorators';
 
 @resource
 export class Reader {

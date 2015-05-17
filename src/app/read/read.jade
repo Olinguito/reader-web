@@ -1,2 +1,5 @@
 template
-  h2 Read
+  h1 ${reading.title}
+  h3 by
+    strong ${reading.author}
+  p(repeat.for="pContent of paragraphs") ${pContent}

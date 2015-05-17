@@ -1,7 +1,7 @@
-import {resource, property} from 'lib/backend/backend';
+import {resource, property} from 'lib/backend/decorators';
 
 @resource
-class Reading {
+export class Reading {
     @property question;
     @property title;
     @property content;
@@ -10,4 +10,9 @@ class Reading {
     @property userQuestions;
     @property tags;
     @property source;
+
+    static getDaily() {
+        // TODO get from backend
+        return Promise.resolve([]);
+    }
 }

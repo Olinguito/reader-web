@@ -1,7 +1,8 @@
-import {resource, property} from 'lib/backend/backend';
+import {resource, property} from 'lib/backend/decorators';
 
 @resource
-class UserQuestion {
+export class UserQuestion {
+    @property reading;
     @property author;
     @property title;
     @property content;

@@ -1,9 +1,9 @@
-import {resource, property} from 'lib/backend/backend';
+import {resource, property} from 'lib/backend/decorators';
 
 const level = {BEG: 0, MED: 1, PRO: 2};
 
 @resource
-class AppQuestion {
+export class AppQuestion {
     @property title;
     @property content;
     @property answers;

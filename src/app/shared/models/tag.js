@@ -1,7 +1,7 @@
-import {resource, property} from 'lib/backend/backend';
+import {resource, property} from 'lib/backend/decorators';
 
 @resource
-class Tag {
+export class Tag {
     @property slug;
     @property name;
     @property icon;
